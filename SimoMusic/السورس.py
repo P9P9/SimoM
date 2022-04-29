@@ -48,16 +48,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    jepthon = await m.reply("1")
-    await jepthon.edit("2")
-    await jepthon.edit("3")
-    await jepthon.edit("4")
-    await jepthon.edit("5")
-    await jepthon.edit("6")
-    await jepthon.edit("7")
-    await jepthon.edit("8")
-    await jepthon.edit("9")
-    await jepthon.edit("**تم اعادة تشغيل سورس سيمو ميوزك بنجاح ✓**")
+    SimoMusic = await m.reply("1")
+    await SimoMusic.edit("2")
+    await SimoMusic.edit("3")
+    await SimoMusic.edit("4")
+    await SimoMusic.edit("5")
+    await SimoMusic.edit("6")
+    await SimoMusic.edit("7")
+    await SimoMusic.edit("8")
+    await SimoMusic.edit("9")
+    await SimoMusic.edit("**تم اعادة تشغيل سورس سيمو ميوزك بنجاح ✓**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -65,7 +65,7 @@ async def restart(client, m: Message):
 @Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
-    JEPM = f"""
+    SIMMM = f"""
 👋 اهلا {m.from_user.mention}!
 قــائـمه الاوامـر لــسورس ســيمو [ {OWNER_NAME} ](t.me/{CHANNEL})
 
@@ -88,13 +88,13 @@ async def help(client, m: Message):
 المطور 🌐 : {OWNER_NAME}
 القناة ツ : @{CHANNEL}
 """
-    await m.reply(JEPM)
+    await m.reply(SIMM)
 
 
 @Client.on_message(filters.command(["السورس"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
-    JEPM = f"""
+    SIMM = f"""
 <b>- مرحبا {m.from_user.mention}!
 
 🎶 هذا هو سورس سيمو ميوزك
@@ -105,4 +105,4 @@ async def repo(client, m: Message):
 
 📚 • قناة السورس  : @ADWSL</b>
 """
-    await m.reply(JEPM, disable_web_page_preview=True)
+    await m.reply(SIMM, disable_web_page_preview=True)
