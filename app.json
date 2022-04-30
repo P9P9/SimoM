@@ -8,7 +8,7 @@
         "SimoMusic",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/Qa8tm/SimoM",
+    "repository": "https://github.com/P9P9/SimoM",
     "env": {
         "SESSION": {
             "description": "هنا ضع كود البايروكرام",
