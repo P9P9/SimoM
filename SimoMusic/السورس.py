@@ -65,7 +65,7 @@ async def restart(client, m: Message):
 @Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
-    SIMMM = f"""
+    SIMM = f"""
 👋 اهلا {m.from_user.mention}!
 قــائـمه الاوامـر لــسورس ســيمو [ {OWNER_NAME} ](t.me/{CHANNEL})
 
